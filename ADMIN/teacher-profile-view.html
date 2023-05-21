@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <title>Profile</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <!-- Font Awesome CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+  <link rel="stylesheet" type="text/CSS" href="/ADMIN/assets/css/teacher-profile-view.css">
+</head>
+
+<body>
+  <div class="student-profile py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent text-center">
+              <img class="profile_img" src="/assets/images/rd.png" alt="student dp">
+              <h3>Dr. Rajib Das</h3>
+            </div>
+            <div class="card-body">
+              <p class="mb-0"><strong class="pr-1">Designation:</strong>Assistant Professor</p>
+              <p class="mb-0"><strong class="pr-1">Department:</strong>Computer Science</p>
+              <p class="mb-0"><strong class="pr-1">Specialization:</strong>Internet technology</p>
+              <a href="#" class="btn btn-primary">View Diary</a>
+              <a href="#" class="btn btn-danger" id="deleteTeacherBtn">Delete Teacher</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <table class="table table-bordered">
+                <tr>
+                  <th width="30%">Name</th>
+                  <td width="2%">:</td>
+                  <td>Dr. Rajib Das</td>
+                </tr>
+                <tr>
+                  <th width="30%">Email</th>
+                  <td width="2%">:</td>
+                  <td>rajib1@gmail.com</td>
+                </tr>
+                <tr>
+                  <th width="30%">Mobile</th>
+                  <td width="2%">:</td>
+                  <td>6901376861</td>
+                </tr>
+                <tr>
+                  <th width="30%">Department</th>
+                  <td width="2%">:</td>
+                  <td>Computer Science & Application</td>
+                </tr>
+                <tr>
+                  <th width="30%">Designation</th>
+                  <td width="2%">:</td>
+                  <td>Asst. Professor</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div style="height: 26px"></div>
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Other Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('.navbar-collapse').toggleClass('show');
+      });
+    });
+  </script>
+  <script src="/ADMIN/assets/js/teacher-profile-view.js"></script>
+  <script type="text/javaScript" src="/ADMIN/assets/js/main_admin.js"></script>
+</body>
+
+</html>

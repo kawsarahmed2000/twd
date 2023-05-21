@@ -1,8 +1,9 @@
 isLoggedIn();
 function isLoggedIn(){
     var d=localStorage.getItem("logedIn")||"no";
+    var isAdmin = localStorage.getItem("isAdmin")||"";
     var currUrl = window.location.href;
-    if(d!="yes"){
+    if (d == "no" && isAdmin!="1"){
         if(!currUrl.includes("/login.html")&& !currUrl.includes("/forget-password/index.html")){
             window.open("/login.html","_self");
         }
