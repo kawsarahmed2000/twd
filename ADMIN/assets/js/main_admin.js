@@ -14,3 +14,15 @@ function isLoggedIn(){
         window.open("/login.html", "_self");
     }
 }
+
+
+function getUrl(param) {
+    var getUrl = window.location.search.slice(1);
+
+    getUrl = getUrl.replace(/=/g, '":"');
+    getUrl = getUrl.replace(/&/g, '","');
+    getUrl = getUrl.replace(/%20/g, " ");
+    getUrl = '{"' + getUrl + '"}';
+    var url = JSON.parse(getUrl);
+    return url[param]
+}

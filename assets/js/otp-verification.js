@@ -42,7 +42,7 @@ function otpVerification(){
         console.log(data);
         if(data.success=="1"){
           alert("Please clcik on login");
-            window.open("/login/reg/login.html","_self");
+            window.open("/login.html","_self");
         }else{
             alert(data.message);
         }
