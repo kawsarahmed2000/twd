@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Teachers Work Diary Login Page</title>
+    <style>
+/* Add background images with slideshow */
+body {
+    background-image: url("dom-fou-YRMWVcdyhmI-unsplash.jpg"), url("edwin-andrade-4V1dC_eoCwg-unsplash.jpg"), url("marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    animation: slideshow 10s infinite;
+}
+
+/* Background images animation */
+@keyframes slideshow {
+    0% {background-image: url("dom-fou-YRMWVcdyhmI-unsplash.jpg");}
+    33.33% {background-image: url("edwin-andrade-4V1dC_eoCwg-unsplash.jpg");}
+    66.66% {background-image: url("marvin-meyer-SYTO3xs06fU-unsplash.jpg");}
+    100% {background-image: url("dom-fou-YRMWVcdyhmI-unsplash.jpg");}
+}
+
+/* Style the form */
+form {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+/* Style the heading */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px #ff8ba7;
+}
+
+/* Style the label */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    box-shadow: 1px 1px #ccc;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Add hover effect to the submit button */
+button[type="submit"]:hover {
+    background-color: #148f77;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Teachers Work Diary Login</h1>
+<form action="#" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Login</button>
+    
+    <a href="Teacher_Registration.html" style="margin-left: 10px; background-color: rgb(209, 206, 11); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px;">Register Now</a>
+    <a href="home.html" style="margin-left: 10px; background-color: rgb(35, 183, 65); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px;">Go Home</a>
+</form>
+</body>
+</html>

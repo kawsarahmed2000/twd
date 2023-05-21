@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/CSS" href="styles1.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+          <li><a href="#">Work Diary</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="login.html">Log Out</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">User Manuel</a></li>
+          <li><a href="#">Developers</a></li>
+        </ul>
+      </div>
+      <center>
+      <div class="profile">
+    <div id="profileViewDiv">
+        <div class="profile-pic">
+            <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+                alt="Your profile-pic" height="200" width="200" />
+        </div>
+        <div class="signature-pic">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jon_Kirsch%27s_Signature.png/800px-Jon_Kirsch%27s_Signature.png"
+                alt="Your signature" width="200" />
+        </div>
+        <div id="profile-details">
+            <h1>PURAB DAS</h1>
+            <p>Phone: +91 98649 33180</p>
+            <p>Email: daspurab80@gmail.com</p>
+            <p>Designation:Asst. Professor</p>
+            <p>Department: Computer Science and Application</p>
+            <button style="margin-top: 20px" onclick="editProfile()">
+                Edit Profile
+            </button>
+        </div>
+    </div>
+</div>
+        <div class="profile-details">
+            <div id="editProfileDiv">
+                <div class="profile-pic">
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+                        alt="Your profile-pic" height="200" width="200" />
+                    <input type="file" id="profileSelect" value="Select profile" />
+                </div>
+                <div class="signature-pic">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jon_Kirsch%27s_Signature.png/800px-Jon_Kirsch%27s_Signature.png"
+                        alt="Your signature" width="200" />
+                    <input type="file" id="profileSelect" value="Select profile" />
+                </div> 
+            <form>
+                <label for="editName">Name</label>
+                <input type="text" value="PURAB DAS" id="editName" /><br><br>
+                <label for="editMobileNumber">Phone</label>
+                <input type="number" value="+91 98649 33180" id="editMobileNumber" /><br><br>
+                <label for="editEmail">Email</label>
+                <input type="email" value="daspurab80@gmail.com" id="editEmail" /><br><br>
+                <label for="editDesignation">Designation</label>
+                <select id="designation" name="designation" required>
+                    <option value="">Select Designation</option>
+                    <option value="Assistant Professor">Assistant Professor</option>
+                    <option value="Associate Professor">Associate Professor</option>
+                    <option value="Guest Faculty">Guest Faculty</option>
+                    <option value="Head Of the Department">Head Of the Department</option>
+                  </select><br/>
+                <br><label for="editDepartment">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                  </select><br/>
+                <button style="margin-top: 20px" onclick="submitProfile()">
+                Submit
+            </button>
+
+            </form>
+        </div>
+    </div>
+</center>
+    <script>
+            document.getElementById("editProfileDiv").style.display="none";
+        function editProfile() {
+            document.getElementById("profileViewDiv").style.display="none";
+            document.getElementById("editProfileDiv").style.display="block";
+        }
+        function submitProfile() {
+            document.getElementById("profileViewDiv").style.display="block";
+            document.getElementById("editProfileDiv").style.display="none";
+        }
+
+    </script>
+</body>
+
+</html>

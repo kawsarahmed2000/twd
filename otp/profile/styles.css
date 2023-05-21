@@ -1,0 +1,190 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('arto-marttinen-K2K1Ec_51SA-unsplash copy.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+*:focus{
+    outline: none;
+}
+.box{
+    box-sizing: border-box;
+    width: 153px;
+    height:153px;
+   
+    box-shadow: -3px -3px 7px #ffffff73,
+                3px 3px 5px rgba(94,104,121,0.288);
+    border-radius: 50%;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all 1s;
+    backdrop-filter: blur(20px);
+}
+img{
+    box-sizing: border-box;
+    width: 149px;
+    height: 149px;
+    border-radius: 50%;
+    margin:0;
+    border:5px solid #ff5d12;
+    padding: 3px;
+    background-color: white; 
+    transition: all 1s;
+}
+input[type="text"],
+input[type="email"]{
+    display:block;
+    box-sizing: border-box;
+    background:none;
+    color:#fff9f9;
+    margin-bottom: 30px;
+    padding: 4px;
+    width:220px;
+    height: 32px;
+    border:rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ff5900;
+    font-family:'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+input[type="text"]{
+    margin-top: 25px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus{
+    border-bottom: 2px solid #ff5900;
+    border-bottom-right-radius: 20px;
+    color:#ff5900;
+    transition: 0.2 ease;
+}
+button{
+    border:1px solid #fb6e1c ;
+    background-image: linear-gradient(to right, #ff5100, #ffbf00);
+    color:white;
+    height:30px;
+    width:100px;
+    border-radius:5px;
+    margin:0px;
+    transition: all 0.3s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+input[type="file"]{
+    display: none;
+}
+label{
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: rgb(0, 213, 255);
+    color:white;
+    border:1px solid #0ca4f0;
+    padding: 2px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+label:hover{
+    background-color: #fbff00;
+    color:black;
+}
+.box:hover{
+    width:360px;
+    height: 600px;
+    border-radius:5px;
+}
+.box:hover img{
+    width:100px;
+    height:100px;
+    margin:20px 31%;
+}
+@media screen and (max-width: 600px)
+        {
+            h1{
+                font-size: 36px;
+                line-height: 50px;
+            }
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 120px;
+            backdrop-filter: blur(40px);
+            border-radius: 40px;
+            padding: 30px;
+            transition: all 0.4s ease;
+            box-shadow: -100px 0 40px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+          }
+          
+          .sidebar:hover {
+            width: 200px;
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
+          }
+          
+          .sidebar h1 {
+            color: #f39c12;
+            text-align: center;
+            font-size: 32px;
+            margin: 0 0 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+          }
+          
+          .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .sidebar li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+          
+          .sidebar a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 8px;
+            border-radius: 10px;
+            background-image: linear-gradient(to right, #ff5100, #ffbf00);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          }
+          
+          .sidebar a:hover {
+            color: #fff;
+            background-image: linear-gradient(to right, #ff5100, #ffbf00);
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          }
+          @media screen and (max-width: 600px) {
+            /* styles for screens with a maximum width of 600px */
+            .sidebar {
+              width: 100%;
+              padding: 20px;
+            }
+          
+            .sidebar h1 {
+              font-size: 24px;
+              line-height: 36px;
+              margin-bottom: 10px;
+            }
+          
+            .sidebar li {
+              font-size: 14px;
+            }
+          
+            .sidebar a {
+              padding: 8px;
+            }
+          }
