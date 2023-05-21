@@ -12,7 +12,7 @@ codes[0].focus()
 //         }
 //     })
 // })
-localStorage.setItem("email","daspurab80@gmail.com")
+// localStorage.setItem("email","daspurab80@gmail.com")
 function otpVerification(){
     var otp=document.getElementById("otp").value;
     
@@ -22,6 +22,7 @@ function otpVerification(){
         otp: otp,
         medium: "new"
       };
+      console.log(loginData)
       
       fetch("https://senderr.in/API_main/verifyOtp.php", {
         method: "POST",

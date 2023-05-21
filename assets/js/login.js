@@ -71,7 +71,7 @@ function register() {
   var password = document.getElementById("passwordReg").value;
   var designation = document.getElementById("designation").value;
   var department = document.getElementById("department").value;
-  localStorage.setItem("email", email);
+  
   const registerData = {
     name: name,
     email: email,
@@ -102,7 +102,7 @@ function register() {
       if (data.success == "1") {
         // handle successful login
         console.log(data);
-        // localStorage.setItem("logedIn","no");
+        localStorage.setItem("email", email);
         window.open("/otp-verification.html", "_self");
       } else {
 

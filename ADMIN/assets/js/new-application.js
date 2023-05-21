@@ -2,7 +2,7 @@
 
 getNewApplicant()
 
-document.getElementById("mainTable").style.display = "none";
+// document.getElementById("mainTable").style.display = "none";
 function getNewApplicant() {
   var email = localStorage.getItem("email");
   var token = localStorage.getItem("token"); 
@@ -33,8 +33,7 @@ function getNewApplicant() {
       var k=0;
       data.data.forEach(element => {
       
-        if (element.isOtpVerified == "1") {
-          k++
+          k=1;
           
           var row = `<tr>
             <td><img src="${element.photo}" class="abc" alt="${element.name}'s Photo" width="100px" height="100px"></td>
@@ -48,14 +47,9 @@ function getNewApplicant() {
             <td><button class="accept">Accept</button> <button class="reject">Reject</button></td>
           </tr>`;
           table.innerHTML += row;
-        }
+          
       });
-      if(k==0){
-        alert("Data not available!")
-        document.getElementById("mainTable").style.display="none";
-      }else{
-        document.getElementById("mainTable").style.display = "block";
-      }
+      
    
     })
     .catch(error => {
