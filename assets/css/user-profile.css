@@ -1,13 +1,18 @@
 body {
-    
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-image: url("/assets/images/bg-image-small.jpg"); 
+    background-image: url("/assets/images/bg-image-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .student-profile .card {
     border-radius: 20px;
 }
