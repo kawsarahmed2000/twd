@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-auto row">
                         <strong class="col-auto">Date:</strong>
-                        <input id="date" name="date" type="date" class="col dotted" onchange="changeDay(this.value)">
+                        <input id="date" name="date" type="date" class="col dotted" onchange="changeDay(this.value)" />
                     </div>
                     <div class="col-auto row">
                         <strong class="col-auto">Day:</strong>
@@ -96,25 +96,37 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group pl-2">
-                                                    <select id="alloted-th" class="form-select" name="al_th">
-                                                        <option selected="">0</option>
+                                                    <select id="allotedTh" class="form-select" name="al_th">
+                                                        <option selected="">Select</option>
+                                                        <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                         <option>4</option>
                                                         <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
                                                     </select>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="input-group pl-2">
-                                                    <select id="alloted-pr" class="form-select" name="al_pr">
-                                                        <option selected="">0</option>
+                                                    <select id="allotedPr" class="form-select" name="al_pr">
+                                                        <option selected="">Select</option>
+                                                        <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                         <option>4</option>
                                                         <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
                                                     </select>
                                                 </div>
                                             </td>
@@ -135,25 +147,37 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group pl-2">
-                                                    <select id="taken-th" class="form-select" name="ta_th">
-                                                        <option selected="">0</option>
+                                                    <select id="takenTh" class="form-select" name="ta_th">
+                                                        <option selected="">Select</option>
+                                                        <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                         <option>4</option>
                                                         <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
                                                     </select>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="input-group pl-2">
-                                                    <select id="taken-pr" class="form-select" name="ta_pr">
-                                                        <option selected="">0</option>
+                                                    <select id="takenPr" class="form-select" name="ta_pr">
+                                                        <option selected="">Select</option>
+                                                        <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                         <option>4</option>
                                                         <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
                                                     </select>
                                                 </div>
                                             </td>
@@ -174,25 +198,37 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group pl-2">
-                                                    <select id="not-th" class="form-select" name="nta_th">
-                                                        <option selected="">0</option>
+                                                    <select id="notTakenTh" class="form-select" name="nta_th">
+                                                        <option selected="">Select</option>
+                                                        <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                         <option>4</option>
                                                         <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
                                                     </select>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="input-group pl-2">
-                                                    <select id="not-pr" class="form-select" name="nta_pr">
-                                                        <option selected="">0</option>
+                                                    <select id="notTakenPr" class="form-select" name="nta_pr">
+                                                        <option selected="">Select</option>
+                                                        <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                         <option>4</option>
                                                         <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
                                                     </select>
                                                 </div>
                                             </td>
@@ -407,7 +443,7 @@
 
                 <div class="d-flex flex-row justify-content-around">
 
-                    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                    <button type="button" onclick="addDiary()" class="btn btn-primary">Submit</button>
                     <a href="/work-diary/index.html" class="btn btn-danger btn-xs btn-outline">Go Back</a>
                 </div>
             </form>
@@ -567,7 +603,8 @@
 
 
 
-<script type="text/javascript" src="/assets/js/add-diary.js"></script>
+    <script type="text/javascript" src="/assets/js/add-diary.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
 
 </body>
 <!-- par.childElementCount
