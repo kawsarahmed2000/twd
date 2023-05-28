@@ -154,6 +154,7 @@ function addDiary() {
         .then(data => {
             // handle successful profile retrieval
             console.log(data)
+            window.history.back();
         })
         .catch(error => {
             console.log(error);

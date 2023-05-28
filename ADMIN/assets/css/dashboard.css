@@ -340,14 +340,27 @@ img {
   height: 100px;
 }
 
-.logout-button {
-  /* Add your desired styles here */
-  background-color: #FF0000;
-  color: #FFFFFF;
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   font-weight: bold;
+  text-align: center;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
+.btn-secondary {
+  color: #fff;
+  background-color: #d00000;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #920000;
+}
+
 
   

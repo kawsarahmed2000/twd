@@ -56,7 +56,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    color: darkseagreen;
     border-radius: 20px;
 }
 .navbar .logo a{

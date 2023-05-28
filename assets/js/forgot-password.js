@@ -1,6 +1,6 @@
 
 function otpSend(){
-    alert("hi");
+    alert("OTP has been sent to your email");
     var email= document.getElementById("emailForg").value;
     const forgetData = {
         email: email
@@ -10,7 +10,7 @@ function otpSend(){
         method: "POST",
         headers: {
           "Content-Type": "application/json"
-        },
+        }, 
         body: JSON.stringify(forgetData)
       })
       .then(response => {
@@ -25,8 +25,7 @@ function otpSend(){
         if(data.success=="1"){
             // handle successful login
             console.log(data);
-            // localStorage.setItem("logedIn","no");
-            window.open("/otp_verification/index.html","_self");
+            window.open("/change-password.html","_self");
         }else{
             alert(data.message);
         }

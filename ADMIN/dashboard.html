@@ -5,20 +5,37 @@
 	<title>Teachers Work Diary - ADMIN Dashboard</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		integrity="sha512-BF4F2QldEqAymC3QsxhIJnqFodZcXV/96QMeR9+/HOv4w60eE4K6P6vCcGkG8d1c6ESsNIO41SPmXg5gsa7Ufw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="/ADMIN/assets/css/dashboard.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
 
 	<script>
 		function deleteTeacher() {
-			var confirmDelete = confirm("Are you sure you want to delete this teacher?");
-			if (confirmDelete) {
-				// Perform the delete operation here
-				alert("Teacher deleted successfully.");
-			}
-		}
+    var confirmDelete = confirm("Are you sure you want to delete this teacher?");
+    if (confirmDelete) {
+        // Perform the delete operation here
+        // Assuming you have a teacher ID or any unique identifier for the teacher
+        var teacherId = "4"; // Replace "123" with the actual teacher ID
+
+        // Send an AJAX request or perform any necessary operations to delete the teacher
+        // Example using AJAX:
+        var xhr = new XMLHttpRequest();
+        xhr.open("DELETE", "/teachers/" + teacherId, true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Teacher deleted successfully
+                alert("Teacher deleted successfully.");
+            } else {
+                // An error occurred while deleting the teacher
+                alert("Failed to delete the teacher.");
+            }
+        };
+        xhr.send();
+    }
+}
+
 
 		function searchTable() {
 			// Declare variables
@@ -55,8 +72,7 @@
 		<h1>Teachers Work Diary - ADMIN Dashboard</h1>
 		<nav>
 			<ul>
-				<a href="#" class="btn btn-danger logout-button" id="logout">Logout</a>
-
+				<button class="btn btn-secondary" onclick="logout()">Log-Out</button>
 			</ul>
 		</nav>
 	</header>

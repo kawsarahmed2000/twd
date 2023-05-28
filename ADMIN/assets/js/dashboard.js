@@ -2,6 +2,7 @@ console.log(localStorage.getItem("token"))
 
 var email = localStorage.getItem("email");
 var token = localStorage.getItem("token");
+
 getTeacherList()
 function getTeacherList() {
     const profileData = {
@@ -38,8 +39,7 @@ function getTeacherList() {
 						<td>
 							<a href="/ADMIN/show-work-diary.html?teacherId=${element.teacherId}" target="_blank">View Diary</a>
 							<a href="/ADMIN/teacher-profile-view.html?teacherId=${element.teacherId}" target="_blank">Profile</a>
-							<a href="#" onclick="deleteTeacher('${element.teacherId}')">Delete</a>
-
+							
 						</td>
 					</tr>`
 
@@ -52,3 +52,8 @@ function getTeacherList() {
             // handle error
         });
 }
+function logout() {
+    
+    sessionStorage.clear();
+    window.location.href = "/login.html";
+  }

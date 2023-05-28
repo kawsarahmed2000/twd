@@ -14,9 +14,11 @@ codes[0].focus()
 // })
 // localStorage.setItem("email","daspurab80@gmail.com")
 function otpVerification(){
-    var otp=document.getElementById("otp").value;
+  var type = localStorage.getItem("type")
+  var otp = document.getElementById("otp").value;
+  var email = localStorage.getItem("email");
+ 
     
-    var email=localStorage.getItem("email");
     const loginData = {
         email: email,
         otp: otp,
@@ -41,8 +43,8 @@ function otpVerification(){
         // handle successful login
         console.log(data);
         if(data.success=="1"){
-          alert("Please clcik on login");
-            window.open("/login.html","_self");
+            alert("Please clcik on login");
+            window.open("/login.html", "_self");
         }else{
             alert(data.message);
         }

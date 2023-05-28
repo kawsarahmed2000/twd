@@ -99,4 +99,8 @@ h3,h6{
 .table-success, .table-success>td, .table-success>th {
     background-color: #ffffff;
     border-radius: 20px;
+    border-color: #ffca00;
+}
+.table-success tbody+tbody, .table-success td, .table-success th, .table-success thead th {
+    border-color: #ffca00;
 }

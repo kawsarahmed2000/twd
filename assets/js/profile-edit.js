@@ -38,8 +38,8 @@ function getProfileDetails() {
         nameEdit2.value = data.name;
         emailEdit.value= data.email;
         mobileEdit.value = data.mobile;
-        // departmentEdit.textContent = data.department;
-        // designationEdit.textContent = data.designation;
+        //departmentEdit.textContent = data.department;
+        //designationEdit.textContent = data.designation;
         
        
        
@@ -59,22 +59,17 @@ function update() {
   var designationEdit = document.getElementById("designationEdit");
   var photoString= "adasd"
   var photoData= new Blob([photoString], { type: 'text/plain' });
-    const profileEditData = {
-    // name: nameEdit2.value,
-    // email:emailEdit.value,
-    // mobile:mobileEdit.value,
-    // designation:designationEdit.value,
-    // department:departmentEdit.value,
-    // photo:photoData
-    name:"Purab Chy", 
-    email:"daspurab80@gmail.com",
-    mobile:"654654654564",
-    designation:"Assistant Professor",
-    department:"Arabic",
-    photo:photoData
+    
+      const profileEditData = {
+        name: nameEdit2.value,
+        email: emailEdit.value,
+        mobile: mobileEdit.value,
+        designation: designationEdit.value,
+        department: departmentEdit.value,
+        photo: "asdgr"
+      };
     
       
-    };
   
     fetch("https://senderr.in/API_main/userProfileEdit.php", {
       method: "POST",

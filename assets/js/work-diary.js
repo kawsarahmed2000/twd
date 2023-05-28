@@ -36,26 +36,26 @@ function monthlyStat(currentMonth){
         .then(data => {
             if(data!="" && data.success!=0){
                 console.log(data)
-                document.getElementById("totalAllotted").textContent = "Total allotted: " + data.totalAlloted
-                document.getElementById("totalAllottedTh").textContent = "Total allotted: " + data.allotedTh
-                document.getElementById("totalAllottedPr").textContent = "Total allotted: " + data.allotedPr
-                document.getElementById("totalTaken").textContent = "Total allotted: " + data.totalTaken
-                document.getElementById("takenTh").textContent = "Total allotted: " + data.takenTh
-                document.getElementById("takenPr").textContent = "Total allotted: " + data.takenPr
-                document.getElementById("totalNotTaken").textContent = "Total allotted: " + data.totalAlloted
-                document.getElementById("notTakenTh").textContent = "Total allotted: " + data.notTakenTh
-                document.getElementById("notTakenPr").textContent = "Total allotted: " + data.notTakenPr
+                document.getElementById("totalAllotted").textContent = "Allotted: " + data.totalAlloted
+                document.getElementById("totalAllottedTh").textContent = "Theory: " + data.allotedTh
+                document.getElementById("totalAllottedPr").textContent = "Practical: " + data.allotedPr
+                document.getElementById("totalTaken").textContent = "Total Taken: " + data.totalTaken
+                document.getElementById("takenTh").textContent = "Theory: " + data.takenTh
+                document.getElementById("takenPr").textContent = "Practical: " + data.takenPr
+                document.getElementById("totalNotTaken").textContent = "Not Taken: " + data.totalNotTaken
+                document.getElementById("notTakenTh").textContent = "Theory: " + data.notTakenTh
+                document.getElementById("notTakenPr").textContent = "Practical: " + data.notTakenPr
             }else{
 
-                document.getElementById("totalAllotted").textContent = "Total allotted: " + 0
-                document.getElementById("totalAllottedTh").textContent = "Total allotted: " + 0
-                document.getElementById("totalAllottedPr").textContent = "Total allotted: " + 0
-                document.getElementById("totalTaken").textContent = "Total allotted: " + 0
-                document.getElementById("takenTh").textContent = "Total allotted: " + 0
-                document.getElementById("takenPr").textContent = "Total allotted: " + 0
-                document.getElementById("totalNotTaken").textContent = "Total allotted: " + 0
-                document.getElementById("notTakenTh").textContent = "Total allotted: " + 0
-                document.getElementById("notTakenPr").textContent = "Total allotted: " + 0
+                document.getElementById("totalAllotted").textContent = "Allotted: " + 0
+                document.getElementById("totalAllottedTh").textContent = "Theory: " + 0
+                document.getElementById("totalAllottedPr").textContent = "Practical: " + 0
+                document.getElementById("totalTaken").textContent = "Total Taken: " + 0
+                document.getElementById("takenTh").textContent = "Theory: " + 0
+                document.getElementById("takenPr").textContent = "Practical: " + 0
+                document.getElementById("totalNotTaken").textContent = "Not Taken: " + 0
+                document.getElementById("notTakenTh").textContent = "Theory: " + 0
+                document.getElementById("notTakenPr").textContent = "Practical: " + 0
             }
         })
         .catch(error => {

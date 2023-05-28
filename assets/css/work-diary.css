@@ -10,7 +10,7 @@ body{
     display:block;
     justify-content: space-between;
     min-height: 100vh;
-    background: linear-gradient( to right, rgb(35, 244, 255),rgb(255, 173, 251) );
+    background: rgb(235, 255, 235);
     background-size: cover;
     
 }
@@ -172,7 +172,7 @@ select {
     border-radius: 5px;
 }
 .MS{
-    width: 1500px;
+    width: 1300px;
     padding: 1px;
     margin: 4px;
     background: #f9f9f9;

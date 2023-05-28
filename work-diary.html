@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,83 +13,106 @@
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/assets/css/work-diary.css">
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: darkseagreen;
+            overflow-x: hidden;
+            padding-top: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 7px black;
+        }
+
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#">WORK-DIARY</a></div>
-            <ul class="links">
-                <li><a href="/profile/index.html">Profile</a></li>
-                <li><a href="/created_by/index.html">Created By</a></li>
-            </ul>
-            <a href="/add-diary.html" class="action_btn">ADD DIARY+</a>
-            <a href="/show-work-diary.html" class="action_btn">SHOW DIARY</a>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    </header>
-
-    <div class="MS">
-        <div class="month">
-            <h3>Monthly Statistics</h3>
-            <div class="select">
-                <select name="month" id="month">
-                    <option value="Select-Month">Select-Month</option>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">june</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="box-1">
-            <h3 id="totalAllotted">Total allotted</h3>
-            <form action="#">
-                <div class="input-box">
-                    <label id="totalAllottedTh">Theory: </label><br>
-                    <label id="totalAllottedPr">Practical: </label>
-                </div>
-            </form>
-        </div>
-        <div class="box-2">
-            <h3 id="totalTaken">Total Taken</h3>
-            <form action="#">
-                <div class="input-box">
-                    <label id="takenTh">Theory: </label><br>
-                    <label id="takenPr">Practical: </label>
-                </div>
-            </form>
-        </div>
-        <div class="box-3">
-            <h3 id="totalNotTaken">Total Not Taken</h3>
-            <form action="#">
-                <div class="input-box">
-                    <label id="notTakenTh">Theory: </label><br>
-                    <label id="notTakenPr">Practical: </label>
-                </div>
-            </form>
-        </div>
+    <div class="sidebar">
+        <a href="/add-diary.html">Add Diary</a>
+        <a href="/show-work-diary.html">Show Diary</a>
+        <a href="/user-profile.html">Profile</a>
+        <a href="/about-us.html">About-us</a>
     </div>
 
-        <div style="display: block;" id="showDiaryMain" class="">
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">WORK-DIARY</a></div>
+               
+            </div>
+        </header>
 
+        <div class="MS">
+            <div class="month">
+                <h3>Monthly Statistics</h3>
+                <div class="select">
+                    <select name="month" id="month">
+                        <option value="Select-Month">Select-Month</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">june</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <h3 id="totalAllotted">Total allotted</h3>
+                <form action="#">
+                    <div class="input-box">
+                        <label id="totalAllottedTh">Theory: </label><br>
+                        <label id="totalAllottedPr">Practical: </label>
+                    </div>
+                </form>
+            </div>
+            <div class="box-2">
+                <h3 id="totalTaken">Total Taken</h3>
+                <form action="#">
+                    <div class="input-box">
+                        <label id="takenTh">Theory: </label><br>
+                        <label id="takenPr">Practical: </label>
+                    </div>
+                </form>
+            </div>
+            <div class="box-3">
+                <h3 id="totalNotTaken">Total Not Taken</h3>
+                <form action="#">
+                    <div class="input-box">
+                        <label id="notTakenTh">Theory: </label><br>
+                        <label id="notTakenPr">Practical: </label>
+                    </div>
+                </form>
+            </div>
         </div>
 
+        <div style="display: block;" id="showDiaryMain" class=""></div>
     </div>
-    
 
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 
