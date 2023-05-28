@@ -42,6 +42,7 @@ var token=localStorage.getItem("token");
         designation.textContent = data.designation;
         department2.textContent = data.department;
         designation2.textContent = data.designation;
+      profilePic.src = data.photo;
        
        
    
